@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f5">
+  <title>Happy Birthday, Anya! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--pink:#e982a8;--rose:#b84f78;--ink:#503744;--soft:#fff5f8;--cream:#fffaf7}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 10% 5%,#ffe2ed 0,transparent 30%),linear-gradient(145deg,#fff8fa,#fff0f5 55%,#fff9f2);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+    .sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+    .sparkle{position:absolute;color:#e99ab6;opacity:.55;animation:float 8s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-25px) rotate(18deg)}}
+    main{position:relative;z-index:1;max-width:1000px;margin:auto;padding:28px 20px 70px}
+    .topline{text-align:center;letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;color:#b66b87;font-weight:700;margin:12px 0 25px}
+    .hero{text-align:center;padding:48px 18px 35px}
+    .eyebrow{display:inline-block;background:#fff;border:1px solid #f6d4e0;border-radius:99px;padding:9px 16px;color:#a95e7c;font-size:.8rem}
+    h1,h2{font-family:"Playfair Display",serif;font-weight:600}
+    h1{font-size:clamp(3rem,9vw,6.5rem);line-height:1.02;margin:22px 0 14px;color:#a94f75}
+    h1 span{display:block;color:#df8eaa;font-style:italic}
+    .hero p{max-width:560px;margin:0 auto;color:#806575;line-height:1.8;font-size:1.02rem}
+    .heart{font-size:1.5rem;color:#d9789d;margin-top:20px;display:inline-block;animation:pulse 1.5s infinite}
+    @keyframes pulse{50%{transform:scale(1.2)}}
+    .section{margin:36px auto 0}
+    .section-heading{text-align:center;margin-bottom:20px}
+    .section-heading small{color:#bd7892;text-transform:uppercase;letter-spacing:.2em;font-weight:700;font-size:.68rem}
+    h2{font-size:clamp(1.8rem,5vw,2.7rem);margin:8px 0;color:#98516e}
+    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .photo-card{background:#fff;padding:10px 10px 17px;border-radius:18px;box-shadow:0 12px 35px #9b5b7517;transform:rotate(-1deg);transition:.3s}
+    .photo-card:nth-child(2){transform:rotate(1deg);margin-top:24px}
+    .photo-card:hover{transform:translateY(-5px) rotate(0)}
+    .photo-card img{display:block;width:100%;height:clamp(230px,45vw,430px);object-fit:cover;border-radius:12px}
+    .photo-card p{text-align:center;margin:13px 4px 0;color:#a56c83;font-family:"Playfair Display",serif;font-style:italic}
+    .letter{max-width:760px;margin:0 auto;background:#ffffffc9;border:1px solid #f4d8e2;border-radius:24px;padding:clamp(24px,5vw,45px);box-shadow:0 16px 45px #9b5b7512;line-height:1.9;color:#745968}
+    .letter .salutation{font-family:"Playfair Display",serif;font-size:1.5rem;color:#a94f75;margin-bottom:12px}
+    .letter p{margin:0 0 16px}
+    .signature{font-family:"Playfair Display",serif;font-style:italic;color:#b45e80;font-size:1.3rem;margin-top:22px}
+    .wish{text-align:center;margin:38px auto 0;padding:30px 18px}
+    .wish p{font-family:"Playfair Display",serif;font-size:clamp(1.4rem,4vw,2rem);color:#a94f75;line-height:1.5;max-width:680px;margin:12px auto}
+    button{border:0;background:linear-gradient(135deg,#e88eae,#c96c91);color:white;padding:14px 23px;border-radius:99px;font:600 .95rem "DM Sans",sans-serif;box-shadow:0 9px 22px #d77b9d44;cursor:pointer;transition:.2s}
+    button:hover{transform:translateY(-2px);box-shadow:0 12px 26px #d77b9d66}
+    #surprise{display:none;margin:22px auto 0;max-width:560px;background:#fff;border:1px dashed #e7a7bd;border-radius:18px;padding:20px;color:#86566c;line-height:1.8}
+    footer{text-align:center;color:#b17b91;font-size:.78rem;margin-top:45px}
+    .falling{position:fixed;top:-30px;z-index:5;pointer-events:none;animation:fall linear forwards}
+    @keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+    @media(max-width:620px){main{padding:18px 14px 50px}.hero{padding-top:38px}.gallery{grid-template-columns:1fr;gap:15px}.photo-card,.photo-card:nth-child(2){transform:none;margin:0}.photo-card img{height:auto;max-height:520px;object-fit:contain;background:#fff}.letter{border-radius:19px}.topline{font-size:.62rem}}
+  </style>
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true">
+    <span class="sparkle" style="left:8%;top:16%;font-size:22px">✧</span>
+    <span class="sparkle" style="left:88%;top:24%;font-size:18px;animation-delay:1s">♡</span>
+    <span class="sparkle" style="left:15%;top:72%;font-size:18px;animation-delay:2s">✦</span>
+    <span class="sparkle" style="left:91%;top:78%;font-size:24px;animation-delay:3s">♡</span>
+  </div>
+  <main>
+    <div class="topline">A little page made just for you · November 5</div>
+    <header class="hero">
+      <span class="eyebrow">Today is all about you ♡</span>
+      <h1>Happy Birthday,<span>Anya!</span></h1>
+      <p>Here's a little corner of the internet filled with warm wishes, favorite memories, and a reminder of how special you are.</p>
+      <div class="heart">♥</div>
+    </header>
+
+    <section class="section">
+      <div class="section-heading"><small>Little moments, big memories</small><h2>These moments with you ♡</h2></div>
+      <div class="gallery">
+        <div class="photo-card">
+          <img src="assets/birthday-photo-1.png" alt="Anya holding a bouquet of pink flowers">
+          <p>A beautiful moment worth keeping.</p>
+        </div>
+        <div class="photo-card">
+          <img src="assets/birthday-photo-2.png" alt="Anya celebrating with flowers and a birthday balloon">
+          <p>May you always have reasons to smile.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><small>A message from the heart</small><h2>For you, Anya</h2></div>
+      <article class="letter">
+        <div class="salutation">Dear Anya,</div>
+        <p>Happy birthday, mahal! I hope today reminds you how loved, appreciated, and special you are. You deserve a day filled with genuine smiles, peaceful moments, and all the little things that make your heart happy.</p>
+        <p>Thank you for being part of my life and for giving me memories that I will always treasure. I may not have the perfect words for everything, but I want you to know that I am grateful for you. I hope this new chapter brings you more courage for your dreams, more reasons to laugh, and beautiful opportunities along the way.</p>
+        <p>Whatever this year brings, I hope you never forget how wonderful you are. Keep being your kind, lovely, and wonderful self. I will always be cheering for you and wishing the best for you.</p>
+        <p>Enjoy your day, mahal. You deserve every bit of happiness coming your way. ♡</p>
+        <div class="signature">With love, always ♡</div>
+      </article>
+    </section>
+
+    <section class="wish">
+      <div class="section-heading"><small>One more thing</small><h2>Make a little birthday wish ✨</h2></div>
+      <p>May this year be gentle with you and full of beautiful surprises.</p>
+      <button id="surpriseBtn" type="button">Open your little surprise ♡</button>
+      <div id="surprise">A wish just for you: may you reach the dreams you quietly work for, find joy in ordinary days, and always feel surrounded by people who care. Happy birthday, Anya! 🎂</div>
+    </section>
+    <footer>Made with care, just for you · ♡</footer>
+  </main>
+  <script>
+    const btn = document.getElementById('surpriseBtn');
+    const surprise = document.getElementById('surprise');
+    btn.addEventListener('click', () => {
+      surprise.style.display = surprise.style.display === 'block' ? 'none' : 'block';
+      btn.textContent = surprise.style.display === 'block' ? 'Close surprise' : 'Open your little surprise ♡';
+      if (surprise.style.display === 'block') burst();
+    });
+    function burst(){
+      const symbols = ['♡','✦','✧','♥'];
+      for(let i=0;i<24;i++){
+        const el=document.createElement('span');
+        el.className='falling';
+        el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+        el.style.left=Math.random()*100+'vw';
+        el.style.color=['#d9789d','#e8a0b8','#bd7892'][Math.floor(Math.random()*3)];
+        el.style.fontSize=(14+Math.random()*18)+'px';
+        el.style.animationDuration=(3+Math.random()*3)+'s';
+        document.body.appendChild(el);
+        setTimeout(()=>el.remove(),6500);
+      }
+    }
+  </script>
+</body>
+</html>
